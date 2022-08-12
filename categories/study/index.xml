@@ -6,7 +6,16 @@
     <description>Recent content in study on soso01 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Sat, 30 Jul 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://soso01.dev/categories/study/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 10 Aug 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://soso01.dev/categories/study/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>오브젝트 13장 서브클래싱과 서브타이핑</title>
+      <link>https://soso01.dev/posts/study/object/object-13/</link>
+      <pubDate>Wed, 10 Aug 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://soso01.dev/posts/study/object/object-13/</guid>
+      <description>오브젝트 13장 서브클래싱과 서브타이핑</description>
+    </item>
+    
     <item>
       <title>오브젝트 12장 다형성</title>
       <link>https://soso01.dev/posts/study/object/object-12/</link>

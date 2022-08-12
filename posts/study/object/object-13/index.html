@@ -13,14 +13,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>오브젝트 12장 다형성 &middot; soso01 blog</title>
-    <meta name="title" content="오브젝트 12장 다형성 &middot; soso01 blog" />
+  <title>오브젝트 13장 서브클래싱과 서브타이핑 &middot; soso01 blog</title>
+    <meta name="title" content="오브젝트 13장 서브클래싱과 서브타이핑 &middot; soso01 blog" />
   
   <meta name="description" content="My awesome website" />
   
   
   
-  <link rel="canonical" href="https://soso01.dev/posts/study/object/object-12/" />
+  <link rel="canonical" href="https://soso01.dev/posts/study/object/object-13/" />
   
   
   
@@ -70,17 +70,17 @@
   
   
   
-  <meta property="og:title" content="오브젝트 12장 다형성" />
-<meta property="og:description" content="오브젝트 12장 다형성" />
+  <meta property="og:title" content="오브젝트 13장 서브클래싱과 서브타이핑" />
+<meta property="og:description" content="오브젝트 13장 서브클래싱과 서브타이핑" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://soso01.dev/posts/study/object/object-12/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-07-30T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-07-30T00:00:00+00:00" /><meta property="og:site_name" content="soso01 blog" />
+<meta property="og:url" content="https://soso01.dev/posts/study/object/object-13/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-08-10T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-08-10T00:00:00+00:00" /><meta property="og:site_name" content="soso01 blog" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="오브젝트 12장 다형성"/>
-<meta name="twitter:description" content="오브젝트 12장 다형성"/>
+<meta name="twitter:title" content="오브젝트 13장 서브클래싱과 서브타이핑"/>
+<meta name="twitter:description" content="오브젝트 13장 서브클래싱과 서브타이핑"/>
 
   
   <script type="application/ld+json">
@@ -88,26 +88,26 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "오브젝트 12장 다형성",
-    "headline": "오브젝트 12장 다형성",
-    "description": "오브젝트 12장 다형성",
-    "abstract": "오브젝트 12장 다형성",
+    "name": "오브젝트 13장 서브클래싱과 서브타이핑",
+    "headline": "오브젝트 13장 서브클래싱과 서브타이핑",
+    "description": "오브젝트 13장 서브클래싱과 서브타이핑",
+    "abstract": "오브젝트 13장 서브클래싱과 서브타이핑",
     "inLanguage": "ko",
-    "url" : "https:\/\/soso01.dev\/posts\/study\/object\/object-12\/",
+    "url" : "https:\/\/soso01.dev\/posts\/study\/object\/object-13\/",
     "author" : {
       "@type": "Person",
       "name": "soso01"
     },
     "copyrightYear": "2022",
-    "dateCreated": "2022-07-30T00:00:00\u002b00:00",
-    "datePublished": "2022-07-30T00:00:00\u002b00:00",
+    "dateCreated": "2022-08-10T00:00:00\u002b00:00",
+    "datePublished": "2022-08-10T00:00:00\u002b00:00",
     
-    "dateModified": "2022-07-30T00:00:00\u002b00:00",
+    "dateModified": "2022-08-10T00:00:00\u002b00:00",
     
     "keywords": ["object"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "399"
+    "wordCount": "902"
   }]
   </script>
 
@@ -275,8 +275,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/study/object/object-12/"
-      >오브젝트 12장 다형성</a
+      href="/posts/study/object/object-13/"
+      >오브젝트 13장 서브클래싱과 서브타이핑</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -285,7 +285,7 @@
 
       
       <h1 class="mt-0 mb-3 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        오브젝트 12장 다형성
+        오브젝트 13장 서브클래싱과 서브타이핑
       </h1>
       <div class="text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -320,7 +320,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2022-07-30 00:00:00 &#43;0000 UTC">2022 / 07 / 30</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
+      <time datetime="2022-08-10 00:00:00 &#43;0000 UTC">2022 / 08 / 10</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">5 mins</span>
     
 
     
@@ -362,101 +362,179 @@
     <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
       
       <div class="min-w-0 min-h-0">
-        <h3 id="서론" class="relative group">서론 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%84%9c%eb%a1%a0" aria-label="Anchor">#</a></span></h3>
+        <h1 id="13장-서브클래싱과-서브타이핑" class="relative group">13장 서브클래싱과 서브타이핑 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#13%ec%9e%a5-%ec%84%9c%eb%b8%8c%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc-%ec%84%9c%eb%b8%8c%ed%83%80%ec%9d%b4%ed%95%91" aria-label="Anchor">#</a></span></h1>
+<h2 id="01-타입" class="relative group">01. 타입 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#01-%ed%83%80%ec%9e%85" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li>11장에서 본 것 처럼 상속을 코드 재사용의 목적으로 사용하면 변경하기 어렵고 유연하지 못한 설게에 이를 확률이 높아진다.
+<li>객체지향 프로그래밍에서 타입의 의미를 이해하려면 프로그래밍 언어 관점에서의 타입과 개념 관점에서의 타입을 함께 살펴볼 필요가 있다.</li>
+</ul>
+<h3 id="개념-관점의-타입" class="relative group">개념 관점의 타입 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ea%b0%9c%eb%85%90-%ea%b4%80%ec%a0%90%ec%9d%98-%ed%83%80%ec%9e%85" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>상속의 목적은 코드 재사용이 아닌, 타입 계층을 구조화하기 위해 사용해야 한다.</li>
-<li>클라이언트 관점에서 인스턴스들을 동일하게 행동하는 그룹으로 묶기 위해서이다.</li>
+<li>개념 관점의 타입이란 우리가 인지하는 세상의 사물의 종류를 의미한다.
+<ul>
+<li>우리가 인식하는 객체들에 적용하는 개념이나 아이디어를 가리켜 타입이라고 부른다.</li>
+</ul>
+</li>
+<li>어떤 대상이 타입으로 분류될 때 그 대상을 타입의 인스턴스라고 한다. 일반적으로 인스턴스를 객체로 부름.</li>
+</ul>
+<h3 id="프로그래밍-언어관점의-타입" class="relative group">프로그래밍 언어관점의 타입 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%ec%96%b8%ec%96%b4%ea%b4%80%ec%a0%90%ec%9d%98-%ed%83%80%ec%9e%85" aria-label="Anchor">#</a></span></h3>
+<ul>
+<li>프로그래밍 언어 관점에서 타입은 연속적인 비트에 의미와 제약을 부여하기 위해 사용한다.</li>
+</ul>
+<h3 id="객체지향-프로그래밍-관점의-타입" class="relative group">객체지향 프로그래밍 관점의 타입 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ea%b0%9d%ec%b2%b4%ec%a7%80%ed%96%a5-%ed%94%84%eb%a1%9c%ea%b7%b8%eb%9e%98%eb%b0%8d-%ea%b4%80%ec%a0%90%ec%9d%98-%ed%83%80%ec%9e%85" aria-label="Anchor">#</a></span></h3>
+<ul>
+<li>객체지향 프로그래밍에서 오퍼레이션은 객체가 수신할 수 있는 메시지를 의미한다.
+<ul>
+<li>따라서 객체의 타입이란 객체가 수신할 수 있는 메시지의 종류를 정의하는 것이다.</li>
+<li>객체지향 프로그래밍에서 타입을 정의하는 것은 객체의 퍼블릭 인터페이스를 정의하는 것과 동일하다.</li>
 </ul>
 </li>
 </ul>
-<h2 id="01-다형성" class="relative group">01. 다형성 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#01-%eb%8b%a4%ed%98%95%ec%84%b1" aria-label="Anchor">#</a></span></h2>
+<h2 id="02-타입-계층" class="relative group">02. 타입 계층 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#02-%ed%83%80%ec%9e%85-%ea%b3%84%ec%b8%b5" aria-label="Anchor">#</a></span></h2>
 <ul>
-<li>다형성이라는 단어는 많은 형태를 가질 수 있는 능력을 의미한다.</li>
-<li>다형성의 종류
+<li>타입 계층을 구성하는 두 타입 간의 관계에서 더 일반적인 타입을 슈퍼타입이라고 부르고, 더 특수한 타입을 서브타입이라고 부른다.</li>
+<li>객체의 의미를 정의하는 내연 관점에서 일반화란 어떤 타입의 정의를 좀 더 보편적이고 추상적으로 만드는 과정을 의미한다.
 <ul>
-<li>오버로딩 다형성
-<ul>
-<li>하나의 클래스 안에 동일한 이름의 메서드가 존재하는 경우.</li>
-<li>인자에 따라 메서드를 선택함.</li>
+<li>반대로 특수화란 어떤 타입의 정의를 더 구체적이고 문맥 종속적으로 만드는 과정을 의미한다.</li>
 </ul>
 </li>
-<li>강제 다형성
+<li>객체지향의 퍼블릭 인터페이스의 관점에서 슈퍼타입과 서브타입을 다음과 같이 정의할 수 있다.
 <ul>
-<li>자동적인 타입 변환이나 사용자가 직접 구현한 타입 변환을 이용해 동일한 연산자를 다양한 타입에 사용할 수 있는 방식을 가리킴.</li>
-<li>‘+’는 숫자의 덧셈이 될 수 있고, 문자열의 연결 연산자로도 사용될 수 있음.</li>
-</ul>
-</li>
-<li>매개변수 다형성
-<ul>
-<li>제네릭 프로그래밍</li>
-<li>List<T> 와 같은 임의의 타입을 선언한 후 사용하는 시점에 구체적인 타입을 지정하는 방식</li>
-</ul>
-</li>
-<li>포함 다형성
-<ul>
-<li>서브타입 다형성</li>
-<li>메시지가 동일하더라도 수신한 객체의 타입에 따라 실제로 수행하는 행동이 달라지는 능력</li>
+<li>슈퍼타입이란 서브타입이 정의한 퍼블릭 인터페이스를 일반화시켜 상대적으로 범용적이고 넓은 의미로 정의한 것이다.</li>
+<li>서브타입이란 슈퍼타입이 정의한 퍼블릭 인터페이스를 특수화시켜 구체적이고 좁은 의미로 정의한 것이다.</li>
 </ul>
 </li>
 </ul>
-</li>
-<li>포함 다형성을 위한 전제조건은 자식 클래스가 부모 클래스의 서브타입이어야 한다는 것이다.
+<h2 id="03-서브-클래싱과-서브-타이핑" class="relative group">03. 서브 클래싱과 서브 타이핑 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#03-%ec%84%9c%eb%b8%8c-%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc-%ec%84%9c%eb%b8%8c-%ed%83%80%ec%9d%b4%ed%95%91" aria-label="Anchor">#</a></span></h2>
+<h3 id="언제-상속을-사용해야-하는가" class="relative group">언제 상속을 사용해야 하는가? <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%96%b8%ec%a0%9c-%ec%83%81%ec%86%8d%ec%9d%84-%ec%82%ac%ec%9a%a9%ed%95%b4%ec%95%bc-%ed%95%98%eb%8a%94%ea%b0%80" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>상속의 진정한 목적은 코드 재사용이 아니라 다형성을 위한 서브타입 계층 구축이다.</li>
-</ul>
-</li>
-<li>포함 다형성을 위해 상속을 사용하는 가장 큰 이유는 상속이 클래스들을 계층으로 쌓아 올린 후 상황에 따라 적절한 메서드를 선택할 수 있는 메커니즘을 제공하기 때문이다.</li>
-</ul>
-<h2 id="02-상속의-양면성" class="relative group">02. 상속의 양면성 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#02-%ec%83%81%ec%86%8d%ec%9d%98-%ec%96%91%eb%a9%b4%ec%84%b1" aria-label="Anchor">#</a></span></h2>
+<li>상속의 올바른 용도는 타입 계층을 구현하는 것이다.</li>
+<li>다음 질문을 모두 충족할 때 사용하라
 <ul>
-<li>데이터 관점의 상속 : 부모 클래스의 데이터를 자식 클래스의 인스턴스에 자동으로 포함시키는 것</li>
-<li>행동 관점의 상속 : 부모 클래스의 메서드를 자식 클래스에 포함</li>
-<li>하지만 상속의 목적은 코드 재사용이 아니다.
-<ul>
-<li>상속은 프로그램을 구성하는 개념들을 기반으로 다형성을 가능하게 하는 타입 계층을 구축하기 위한 것이다.</li>
-<li>타입 계층에 대한 고민 없이 코드를 재사용하기 위해 상속을 사용하면 이해하기 어렵고 유지보수하기 버운 코드가 만들어질 확률이 높다.</li>
+<li>상속 관계가 is-a 관계를 모델링하는가?</li>
+<li>클라이언트 입장에서 부모 클래스의 타입으로 자식 클래스를 사용해도 무관한가?(행동 호환성)</li>
 </ul>
 </li>
 </ul>
-<h2 id="03-업캐스팅과-동적-바인딩" class="relative group">03. 업캐스팅과 동적 바인딩 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#03-%ec%97%85%ec%ba%90%ec%8a%a4%ed%8c%85%ea%b3%bc-%eb%8f%99%ec%a0%81-%eb%b0%94%ec%9d%b8%eb%94%a9" aria-label="Anchor">#</a></span></h2>
-<h3 id="업캐스팅" class="relative group">업캐스팅 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%97%85%ec%ba%90%ec%8a%a4%ed%8c%85" aria-label="Anchor">#</a></span></h3>
+<h3 id="is-a-관계" class="relative group">is-a 관계 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#is-a-%ea%b4%80%ea%b3%84" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>상속을 이용하면 부모 클래스의 퍼블릭 인터페이스가 자식 클래스의 퍼블릭 인터페이스에 합쳐지기 때문에 부모 클래스의 인스턴스에게 전송할 수 있는 메시지를 자식 클래스의 인스턴스에게 전송할 수 있다.</li>
-<li>부모 클래스의 인스턴스 대신 자식 클래스의 인스턴스를 사용하더라도 메시지를 처리하는 데는 아무런 문제가 없으며, 컴파일러는 명시적인 타입 변환 없이도 자식 클래스가 부모 클래스를 대체할 수 있게 허용한다.</li>
-<li>컴파일러 관점에서는 자식 클래스는 아무런 제약 없이 부모를 대체할 수 있다.
+<li>펭귄은 새다.
 <ul>
-<li>따라서 부모 클래스와 협력하는 클라이언트는 다양한 자식 클래스의 인스턴스와 또한 협력이 가능하다.</li>
-<li>이 설계는 유연하며 확장이 용이하다.</li>
+<li>펭귄은 날 수 없는 새다.</li>
+<li>Bird 클래스에 fly 메서드가 있다면 펭귄은 Bird의 서브타입이 될 수 없다.</li>
+<li>어휘적인 정의가 아니라 기대되는 행동에 따라 타입 계층을 구성해야 한다.</li>
+</ul>
+</li>
+<li>타입 계층의 의미는 행동이라는 문맥에 따라 달라질 수 있다.</li>
+</ul>
+<h3 id="행동-호환성" class="relative group">행동 호환성 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%96%89%eb%8f%99-%ed%98%b8%ed%99%98%ec%84%b1" aria-label="Anchor">#</a></span></h3>
+<ul>
+<li>펭귄이 새가 아니라는 사실을 받아들이기 위한 출발점은 타입이 행동과 관련이 있다는 사실에 주목하는 것이다.
+<ul>
+<li>타입의 이름 사이에 개념적으로 어떤 연관성이 있다고 하더라도 행동에 연관성이 없다면 is-a 관계를 사용하지 말아야 한다.</li>
+<li>결론은 두 타입 사이에 행동이 호환될 경우에만 타입 계층으로 묶어야 한다는 것이다.</li>
+</ul>
+</li>
+<li>행동의 호환 여부를 판단하는 기준은 클라이언트 관점이다.
+<ul>
+<li>클라이언트가 두 타입이 동일하게 행동할 것이라고 기대한다면 두 타입을 타입 계층으로 묶을 수 있다.</li>
 </ul>
 </li>
 </ul>
-<h3 id="동적-바인딩" class="relative group">동적 바인딩 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%8f%99%ec%a0%81-%eb%b0%94%ec%9d%b8%eb%94%a9" aria-label="Anchor">#</a></span></h3>
+<h3 id="클라이언트-기대에-따라-계층-분리하기" class="relative group">클라이언트 기대에 따라 계층 분리하기 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%81%b4%eb%9d%bc%ec%9d%b4%ec%96%b8%ed%8a%b8-%ea%b8%b0%eb%8c%80%ec%97%90-%eb%94%b0%eb%9d%bc-%ea%b3%84%ec%b8%b5-%eb%b6%84%eb%a6%ac%ed%95%98%ea%b8%b0" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>함수를 호출하는 전통적인 언어들은 호출될 함수를 컴파일타임에 결정한다.
+<li>Bird → FlyingBird / Penguin
 <ul>
-<li>정적 바인딩, 초기 바인딩, 컴파일타임 바인딩이라고도 부름</li>
+<li>슈퍼타입인 Bird에서 fly메서드를 제외하면 펭귄은 새의 서브타입이 될 수 있다.</li>
+<li>fly 메서드가 있는 FlyingBird는 Bird의 서브타입으로 분리한다.</li>
 </ul>
 </li>
-<li>객체향 언어에서는 메시지를 수신했을 때 실행될 메서드가 런타임에 결정된다
+<li>설계가 꼭 현실 세계를 반영할 필요는 없다.</li>
+</ul>
+<h3 id="서브클래싱과-서브-타이핑" class="relative group">서브클래싱과 서브 타이핑 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%84%9c%eb%b8%8c%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc-%ec%84%9c%eb%b8%8c-%ed%83%80%ec%9d%b4%ed%95%91" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>동적 바인딩, 지연 바인딩이라고도 부름</li>
+<li>서브 클래싱
+<ul>
+<li>다른 클래스의 코드를 재사용할 목적으로 상속을 사용하는 경우를 가리킨다.</li>
+<li>자식 클래스와 부모 클래스의 행동이 호환되지 않기 때문에 자식 클래스의 인스턴스가 부모 클래스의 인스턴스를 대체할 수 없다.</li>
+</ul>
+</li>
+<li>서브 타이핑
+<ul>
+<li>타입 계층을 구성하기 위해 상속을 사용하는 경우를 가리킨다.</li>
+<li>자식 클래스와 부모 클래스의 행동이 호환되기 때문에 자식 클래스의 인스턴스가 부모 클래스의 인스턴스를 대체할 수 있다.</li>
+</ul>
+</li>
+<li>서브타이핑 관계가 유지되기 위해서는 서브타입이 슈퍼타입이 하는 모든 행동을 동일하게 할 수 있어야 한다. → 행동호환성</li>
+<li>자식 클래스와 부모 클래스 사이의 행동호환성은 부모 클래스에 대한 자식 클래스의 대체 가능성을 포함한다.</li>
+</ul>
+<h2 id="04-리스코프-치환-원칙" class="relative group">04. 리스코프 치환 원칙 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#04-%eb%a6%ac%ec%8a%a4%ec%bd%94%ed%94%84-%ec%b9%98%ed%99%98-%ec%9b%90%ec%b9%99" aria-label="Anchor">#</a></span></h2>
+<ul>
+<li>서브타입은 그것의 기반 타입에 대해 대체 가능해야 한다.
+<ul>
+<li>클라이언트가 차이점을 인식하지 못한 채 기반 클래스의 인터페이스를 통해 서브클래스를 사용해야 한다.</li>
+<li>리스코프 치환 원칙에 따르면 자식 클래스가 부모클래스와 행동 호환성을 유지함으로써 부모 클래스를 대체할 수 있도록 구현된 상속 관계만을 서브타이핑이라고 불러야 한다.</li>
 </ul>
 </li>
 </ul>
-<h2 id="04-동적-메서드-탐색과-다형성" class="relative group">04. 동적 메서드 탐색과 다형성 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#04-%eb%8f%99%ec%a0%81-%eb%a9%94%ec%84%9c%eb%93%9c-%ed%83%90%ec%83%89%ea%b3%bc-%eb%8b%a4%ed%98%95%ec%84%b1" aria-label="Anchor">#</a></span></h2>
+<h3 id="클라이언트와-대체-가능성" class="relative group">클라이언트와 대체 가능성 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%81%b4%eb%9d%bc%ec%9d%b4%ec%96%b8%ed%8a%b8%ec%99%80-%eb%8c%80%ec%b2%b4-%ea%b0%80%eb%8a%a5%ec%84%b1" aria-label="Anchor">#</a></span></h3>
 <ul>
-<li>객체에서 메시지를 받으면 수행할 메서드가 있는지 확인하고, 없다면 상속된 부모 클래스로 올라가서 탐색한다.</li>
-<li>self, super 에 대한 내용</li>
-</ul>
-<h2 id="05-상속-대-위임" class="relative group">05. 상속 대 위임 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#05-%ec%83%81%ec%86%8d-%eb%8c%80-%ec%9c%84%ec%9e%84" aria-label="Anchor">#</a></span></h2>
+<li>자식 클래스가 부모 클래스를 대체하기 위해서는 부모 클래스에 대한 클라이언트의 가정을 준수해야 한다는 것을 강조</li>
+<li>클라이언트와 격리한 채로 본 모델은 의미 있게 검증하는 것이 불가능하다.
 <ul>
-<li>언어적인 상속 메커니즘 내용.
+<li>어떤 모델의 유효성은 클라이언트의 관점에서만 검증 가능하다.</li>
+<li>클라이언트 관점에서 Square가 Rectangle의 서브타입이 아닐 수 있음.
 <ul>
-<li>빠르게 읽고 넘어감. 나중에 다시 볼 것</li>
+<li>Square의 setX, setY가 Rectangle과 호환이 안되는 예시</li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+<h3 id="is-a-관계-다시-살펴보기" class="relative group">is-a 관계 다시 살펴보기 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#is-a-%ea%b4%80%ea%b3%84-%eb%8b%a4%ec%8b%9c-%ec%82%b4%ed%8e%b4%eb%b3%b4%ea%b8%b0" aria-label="Anchor">#</a></span></h3>
+<ul>
+<li>클라이언트 관점에서 자식 클래스의 행동이 부모 클래스의 행동과 호환되지 않고 그로 인해 대체가 불가능하다면 어휘적으로 is-a라고 말할 수 있다고 하더라도 그 관계는 is-a가 아님.
+<ul>
+<li>정사각형은 직사각형인가? 클라이언트에서 이를 동일하게 취급할 수 있을때만 그렇다.</li>
+</ul>
+</li>
+<li>is-a관계는 객체지향에서 중요한 것은 객체의 속성이 아니라 객체의 행동이라는 점을 강조한다.</li>
+<li>클라이언트를 고려하지 않은 채 개념과 속성의 측면에서 상속 관계를 정할 경우 리스코프 치환 원칙을 위반하는 서브클래싱에 이르게 될 확률이 높다.</li>
+<li>행동을 고려하지 않은 두 타입의 이름이 단순히 is-a로 연결 가능하다고 해서 상속 관계로 연결하지 마라.</li>
+<li>결론적으로 상속이 서브타이핑을 위해 사용될 경우에만 is-a관계다.</li>
+</ul>
+<h3 id="리스코프-치환-원칙은-유연한-설계의-기반이다" class="relative group">리스코프 치환 원칙은 유연한 설계의 기반이다. <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%a6%ac%ec%8a%a4%ec%bd%94%ed%94%84-%ec%b9%98%ed%99%98-%ec%9b%90%ec%b9%99%ec%9d%80-%ec%9c%a0%ec%97%b0%ed%95%9c-%ec%84%a4%ea%b3%84%ec%9d%98-%ea%b8%b0%eb%b0%98%ec%9d%b4%eb%8b%a4" aria-label="Anchor">#</a></span></h3>
+<ul>
+<li>리스코프 치환 원칙은 클라이언트가 어떤 자식 클래스와도 안정적으로 협력할 수 있는 상속 구조를 구현할 수 있는 가이드라인을 제공한다.
+<ul>
+<li>새로운 자식 클래스를 추가하더라도 클라이언트의 입장에서 동일하게 행동하기만 하면 클라이언트를 수정하지 않고도 상속 계층을 확장할 수 있다.</li>
+<li>클라이언트의 입장에서 퍼블릭 인터페이스의 행동 방식이 변경되지 않는다면 클라이언트의 코드를 변경하지 않고도 새로운 자식 클래스와 협력할 수 있게 된다는 것이다.</li>
+</ul>
+</li>
+<li>리스코프 치환 원칙을 따르는 설계는 유연할뿐만 아니라 확장성이 높다.</li>
+</ul>
+<h3 id="타입-계층과-리스코프-치환-원칙" class="relative group">타입 계층과 리스코프 치환 원칙 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%83%80%ec%9e%85-%ea%b3%84%ec%b8%b5%ea%b3%bc-%eb%a6%ac%ec%8a%a4%ec%bd%94%ed%94%84-%ec%b9%98%ed%99%98-%ec%9b%90%ec%b9%99" aria-label="Anchor">#</a></span></h3>
+<ul>
+<li>클래스 상속은 타입 계층을 구현할 수 있는 다양한 방법 중 하나일 뿐이다.</li>
+<li>구현 방법은 중요하지 않다. 핵심은 구현 방법과 무관하게 클라이언트의 관점에서 슈퍼타입에 대해 기대하는 모든 것이 서브타입에게도 적용돼야 하는 것이다.</li>
+</ul>
+<h2 id="5-계약에-의한-설계와-서브타이핑" class="relative group">5. 계약에 의한 설계와 서브타이핑 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#5-%ea%b3%84%ec%95%bd%ec%97%90-%ec%9d%98%ed%95%9c-%ec%84%a4%ea%b3%84%ec%99%80-%ec%84%9c%eb%b8%8c%ed%83%80%ec%9d%b4%ed%95%91" aria-label="Anchor">#</a></span></h2>
+<ul>
+<li>클라이언트와 서버 사이의 협력을 의무와 이익으로 구성된 계약의 관점에서 표현하는 것을 계약에 의한 설계라고 부른다.
+<ul>
+<li>계약에 의한 설계는 클라이언트가 정상적으로 메서드를 실행하기 위해 만족시켜야 하는 사전조건과 메서드가 실행된 후에 서버가 클라이언트에게 보장해야 하는 사후조건, 메서드 실행 전과 실행 후에 인스턴스가 만족시켜야 하는 클래스 불변식의 세 가지 요소로 구성된다.</li>
+<li>리스코프 치환 원칙은 어떤 타입이 서브타입이 되기 위해서는 슈퍼타입의 인스턴스와 협력하는 ‘클라이언트&rsquo;의 관점에서 서브타입의 인스턴스가 슈퍼타입을 대체하더라도 협력에 지장이 없어야 한다는 것을 의미한다.</li>
+</ul>
+</li>
+<li><code>서브타입이 리스코프 치환 원칙을 만족시키기 위해서는 클라이언트와 슈퍼타입 간에 체결된 '계약'을 준수해야 한다.</code></li>
+</ul>
+<h3 id="서브타입과-계약" class="relative group">서브타입과 계약 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ec%84%9c%eb%b8%8c%ed%83%80%ec%9e%85%ea%b3%bc-%ea%b3%84%ec%95%bd" aria-label="Anchor">#</a></span></h3>
+<ul>
+<li>서브타입에 더 강력한 사전조건을 정의할수는 없다.</li>
+<li>서브타입에 슈퍼타입과 같거나 더 약한 사전조건을 정의할 수 있다.</li>
+<li>서브타입에 슈퍼타입과 같거나 더 강한 사후조건을 정의할 수 있다.</li>
+<li>서브타입에 더 약한 사후조건을 정의할 수 없다.</li>
+<li>→ 서브타입에 조건은 더 강해질 순 없지만, 리턴하는 타입의 범위는 좁혀도 괜찮음. 슈퍼타입과 호환되기 때문</li>
+<li>부록 A 계약에 의한 설계를 참고</li>
 </ul>
 
       </div>
@@ -551,7 +629,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://www.facebook.com/sharer/sharer.php?u=https://soso01.dev/posts/study/object/object-12/&amp;quote=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2012%ec%9e%a5%20%eb%8b%a4%ed%98%95%ec%84%b1"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://soso01.dev/posts/study/object/object-13/&amp;quote=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2013%ec%9e%a5%20%ec%84%9c%eb%b8%8c%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc%20%ec%84%9c%eb%b8%8c%ed%83%80%ec%9d%b4%ed%95%91"
           title="Share on Facebook"
           aria-label="Share on Facebook"
           >
@@ -568,7 +646,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://twitter.com/intent/tweet/?url=https://soso01.dev/posts/study/object/object-12/&amp;text=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2012%ec%9e%a5%20%eb%8b%a4%ed%98%95%ec%84%b1"
+          href="https://twitter.com/intent/tweet/?url=https://soso01.dev/posts/study/object/object-13/&amp;text=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2013%ec%9e%a5%20%ec%84%9c%eb%b8%8c%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc%20%ec%84%9c%eb%b8%8c%ed%83%80%ec%9d%b4%ed%95%91"
           title="Tweet on Twitter"
           aria-label="Tweet on Twitter"
           >
@@ -585,7 +663,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://pinterest.com/pin/create/bookmarklet/?url=https://soso01.dev/posts/study/object/object-12/&amp;description=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2012%ec%9e%a5%20%eb%8b%a4%ed%98%95%ec%84%b1"
+          href="https://pinterest.com/pin/create/bookmarklet/?url=https://soso01.dev/posts/study/object/object-13/&amp;description=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2013%ec%9e%a5%20%ec%84%9c%eb%b8%8c%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc%20%ec%84%9c%eb%b8%8c%ed%83%80%ec%9d%b4%ed%95%91"
           title="Pin on Pinterest"
           aria-label="Pin on Pinterest"
           >
@@ -602,7 +680,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://reddit.com/submit/?url=https://soso01.dev/posts/study/object/object-12/&amp;resubmit=true&amp;title=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2012%ec%9e%a5%20%eb%8b%a4%ed%98%95%ec%84%b1"
+          href="https://reddit.com/submit/?url=https://soso01.dev/posts/study/object/object-13/&amp;resubmit=true&amp;title=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2013%ec%9e%a5%20%ec%84%9c%eb%b8%8c%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc%20%ec%84%9c%eb%b8%8c%ed%83%80%ec%9d%b4%ed%95%91"
           title="Submit to Reddit"
           aria-label="Submit to Reddit"
           >
@@ -619,7 +697,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://soso01.dev/posts/study/object/object-12/&amp;title=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2012%ec%9e%a5%20%eb%8b%a4%ed%98%95%ec%84%b1"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://soso01.dev/posts/study/object/object-13/&amp;title=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2013%ec%9e%a5%20%ec%84%9c%eb%b8%8c%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc%20%ec%84%9c%eb%b8%8c%ed%83%80%ec%9d%b4%ed%95%91"
           title="Share on LinkedIn"
           aria-label="Share on LinkedIn"
           >
@@ -636,7 +714,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="mailto:?body=https://soso01.dev/posts/study/object/object-12/&amp;subject=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2012%ec%9e%a5%20%eb%8b%a4%ed%98%95%ec%84%b1"
+          href="mailto:?body=https://soso01.dev/posts/study/object/object-13/&amp;subject=%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%2013%ec%9e%a5%20%ec%84%9c%eb%b8%8c%ed%81%b4%eb%9e%98%ec%8b%b1%ea%b3%bc%20%ec%84%9c%eb%b8%8c%ed%83%80%ec%9d%b4%ed%95%91"
           title="Send via email"
           aria-label="Send via email"
           >
@@ -663,7 +741,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group" href="/posts/study/object/object-11/">
+            <a class="flex group" href="/posts/study/object/object-12/">
               <span
                 class="mr-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -675,11 +753,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >오브젝트 11장 합성과 유연한 설계</span
+                  >오브젝트 12장 다형성</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2022-07-27 00:00:00 &#43;0000 UTC">2022 / 07 / 27</time>
+                    <time datetime="2022-07-30 00:00:00 &#43;0000 UTC">2022 / 07 / 30</time>
                   
                 </span>
               </span>
@@ -687,28 +765,6 @@
           
         </span>
         <span>
-          
-            <a class="flex text-right group" href="/posts/study/object/object-13/">
-              <span class="flex flex-col">
-                <span
-                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >오브젝트 13장 서브클래싱과 서브타이핑</span
-                >
-                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
-                  
-                    <time datetime="2022-08-10 00:00:00 &#43;0000 UTC">2022 / 08 / 10</time>
-                  
-                </span>
-              </span>
-              <span
-                class="ml-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
-                >&rarr;</span
-              >
-              <span
-                class="mr-3 ltr:hidden rtl:inline text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
-                >&larr;</span
-              >
-            </a>
           
         </span>
       </div>
