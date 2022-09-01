@@ -779,8 +779,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 .prose :where(p):not(:where([class~="not-prose"] *)) {
-  margin-top: 1.25em;
-  margin-bottom: 1.25em;
+  margin-top: 0.75em;
+  margin-bottom: 0.75em;
 }
 
 .prose :where(img):not(:where([class~="not-prose"] *)) {
