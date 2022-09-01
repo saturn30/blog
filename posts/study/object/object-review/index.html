@@ -3,8 +3,8 @@
   lang="ko"
   dir="ltr"
   class="scroll-smooth"
-  data-default-appearance="light"
-  data-auto-appearance="true"
+  data-default-appearance="dark"
+  data-auto-appearance="false"
 ><head>
   <meta charset="utf-8" />
   
@@ -13,14 +13,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   
-  <title>00-노마드코더 클린코드 구매 인증 &middot; soso01 blog</title>
-    <meta name="title" content="00-노마드코더 클린코드 구매 인증 &middot; soso01 blog" />
+  <title>책 오브젝트 후기 &middot; soso01 blog</title>
+    <meta name="title" content="책 오브젝트 후기 &middot; soso01 blog" />
   
   <meta name="description" content="My awesome website" />
   
   
   
-  <link rel="canonical" href="https://soso01.dev/posts/2022/study/clean-code/start-clean-code-study/" />
+  <link rel="canonical" href="https://soso01.dev/posts/study/object/object-review/" />
   
   
   
@@ -34,24 +34,28 @@
   <link
     type="text/css"
     rel="stylesheet"
-    href="/css/main.bundle.min.49a28f704ec3513d85b0ca6465b553f496e5d3ab7b6eb337d8881afc66063274c2cece3b3a33321de162d0f62714bae033c08904dd89586589e09769fff39da7.css"
-    integrity="sha512-SaKPcE7DUT2FsMpkZbVT9Jbl06t7brM32Iga/GYGMnTCzs47OjMyHeFi0PYnFLrgM8CJBN2JWGWJ4Jdp//Odpw=="
+    href="/css/main.bundle.min.a38be1d935a2293048a2f63c7271552ed996d7d818951b3f960566cc4bd99cf959fa79d94b0fbb01706ec3412d1aaa52d16e27172757a92f96f4f729cf3bf10e.css"
+    integrity="sha512-o4vh2TWiKTBIovY8cnFVLtmW19gYlRs/lgVmzEvZnPlZ&#43;nnZSw&#43;7AXBuw0EtGqpS0W4nFydXqS&#43;W9PcpzzvxDg=="
+  />
+
+  <link
+    href="https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css"
+    rel="stylesheet"
+    type="text/css"
   />
   
-  
-  <script type="text/javascript" src="/js/appearance.min.12e98742cd283574d030a7fe55f29597df4ee214f7ff7075b4d19a64d046a602753c715295550be7899b661619cec89c679049d36c624681671a8013c1249896.js" integrity="sha512-EumHQs0oNXTQMKf&#43;VfKVl99O4hT3/3B1tNGaZNBGpgJ1PHFSlVUL54mbZhYZzsicZ5BJ02xiRoFnGoATwSSYlg=="></script>
+    <script type="text/javascript" src="/js/appearance.min.badab316c9287a5a42a843e4eb45da65bb3d194a5a0f5fa4a3e516160e67df0b8c65f4f19a8e146436e29d583699e6cb41d6bbe99e05e1dbaa877763bad9f8e2.js" integrity="sha512-utqzFskoelpCqEPk60XaZbs9GUpaD1&#43;ko&#43;UWFg5n3wuMZfTxmo4UZDbinVg2mebLQda76Z4F4duqh3djutn44g=="></script>
   
     
-    
-    
-  
-  
     
     
   
   
     
-    <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.ae2ecb995505e39b73a72ec79bb2caee18a60721c58721805c701f2991d05e448c16d6843591b5b1ce459e8db4fc493891f1d0ac37be9ec8f9bcca812680b493.js" integrity="sha512-ri7LmVUF45tzpy7Hm7LK7himByHFhyGAXHAfKZHQXkSMFtaENZG1sc5Fno20/Ek4kfHQrDe&#43;nsj5vMqBJoC0kw==" data-copy="Copy" data-copied="Copied"></script>
+    
+  
+  
+        <script defer type="text/javascript" id="script-bundle" src="/js/main.bundle.min.834d6b4d9147f0358db730e32000d6cfe107f549babe2a7c97cac37b88630d9bd03f55e5606dfa6295d68bbda40afe6c5be61df52bff647b406a8b716ad0ae95.js" integrity="sha512-g01rTZFH8DWNtzDjIADWz&#43;EH9Um6vip8l8rDe4hjDZvQP1XlYG36YpXWi72kCv5sW&#43;Yd9Sv/ZHtAaotxatCulQ==" data-copy="Copy" data-copied="Copied"></script>
   
   
   
@@ -66,18 +70,17 @@
   
   
   
-  <meta property="og:title" content="00-노마드코더 클린코드 구매 인증" />
-<meta property="og:description" content="클린코드 책 구매 인증" />
+  <meta property="og:title" content="책 오브젝트 후기" />
+<meta property="og:description" content="책 오브젝트 후기" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://soso01.dev/posts/2022/study/clean-code/start-clean-code-study/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2022-04-22T00:00:00+00:00" />
-<meta property="article:modified_time" content="2022-04-22T00:00:00+00:00" /><meta property="og:site_name" content="soso01 blog" />
-
+<meta property="og:url" content="https://soso01.dev/posts/study/object/object-review/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2022-09-01T00:00:00+00:00" /><meta property="og:site_name" content="soso01 blog" />
 
 
   <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="00-노마드코더 클린코드 구매 인증"/>
-<meta name="twitter:description" content="클린코드 책 구매 인증"/>
+<meta name="twitter:title" content="책 오브젝트 후기"/>
+<meta name="twitter:description" content="책 오브젝트 후기"/>
 
   
   <script type="application/ld+json">
@@ -85,33 +88,33 @@
     "@context": "https://schema.org",
     "@type": "Article",
     "articleSection": "Posts",
-    "name": "00-노마드코더 클린코드 구매 인증",
-    "headline": "00-노마드코더 클린코드 구매 인증",
-    "description": "클린코드 책 구매 인증",
-    "abstract": "클린코드 책 구매 인증",
+    "name": "책 오브젝트 후기",
+    "headline": "책 오브젝트 후기",
+    "description": "책 오브젝트 후기",
+    "abstract": "책 오브젝트 후기",
     "inLanguage": "ko",
-    "url" : "https:\/\/soso01.dev\/posts\/2022\/study\/clean-code\/start-clean-code-study\/",
+    "url" : "https:\/\/soso01.dev\/posts\/study\/object\/object-review\/",
     "author" : {
       "@type": "Person",
       "name": "soso01"
     },
     "copyrightYear": "2022",
-    "dateCreated": "2022-04-22T00:00:00\u002b00:00",
-    "datePublished": "2022-04-22T00:00:00\u002b00:00",
+    "dateCreated": "2022-09-01T00:00:00\u002b00:00",
+    "datePublished": "2022-09-01T00:00:00\u002b00:00",
     
-    "dateModified": "2022-04-22T00:00:00\u002b00:00",
+    "dateModified": "2022-09-01T00:00:00\u002b00:00",
     
-    "keywords": ["clean-code"],
+    "keywords": ["object"],
     
     "mainEntityOfPage": "true",
-    "wordCount": "10"
+    "wordCount": "402"
   }]
   </script>
 
 
   
   
-    <meta name="generator" content="Hugo 0.97.0" />
+    <meta name="generator" content="Hugo 0.102.2" />
   
   
   <meta name="author" content="soso01" />
@@ -242,7 +245,7 @@
 </header>
 <main id="main-content" class="relative grow">
   <article>
-    <header class="max-w-prose">
+    <header class="">
       
         <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
   
@@ -272,8 +275,8 @@
   <li class="inline hidden">
     <a
       class="hover:underline decoration-neutral-300 dark:underline-neutral-600"
-      href="/posts/2022/study/clean-code/start-clean-code-study/"
-      >00-노마드코더 클린코드 구매 인증</a
+      href="/posts/study/object/object-review/"
+      >책 오브젝트 후기</a
     ><span class="px-1 text-primary-500">/</span>
   </li>
 
@@ -282,7 +285,7 @@
 
       
       <h1 class="mt-0 mb-3 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
-        00-노마드코더 클린코드 구매 인증
+        책 오브젝트 후기
       </h1>
       <div class="text-base text-neutral-500 dark:text-neutral-400 print:hidden">
         
@@ -317,7 +320,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2022-04-22 00:00:00 &#43;0000 UTC">2022 / 04 / 22</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">1 mins</span>
+      <time datetime="2022-09-01 00:00:00 &#43;0000 UTC">2022 / 09 / 01</time><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">2 mins</span>
     
 
     
@@ -339,21 +342,13 @@
         
       
         
-          
-            <a
-              href="/series/%EB%85%B8%EB%A7%88%EB%93%9C%EC%BD%94%EB%8D%94-%ED%81%B4%EB%A6%B0%EC%BD%94%EB%93%9C/"
-              class="px-1 py-[1px] border rounded-md border-neutral-200 dark:border-neutral-600 hover:border-primary-300 hover:text-primary-700 dark:hover:border-primary-600 dark:hover:text-primary-400"
-              >노마드코더 클린코드</a
-            >
-          
-        
       
         
           
             <a
-              href="/tags/clean-code/"
+              href="/tags/object/"
               class="px-1 py-[1px] border rounded-md border-neutral-200 dark:border-neutral-600 hover:border-primary-300 hover:text-primary-700 dark:hover:border-primary-600 dark:hover:text-primary-400"
-              >clean-code</a
+              >object</a
             >
           
         
@@ -366,23 +361,25 @@
     </header>
     <section class="flex flex-col max-w-full mt-0 prose lg:flex-row dark:prose-invert">
       
-      <div class="min-w-0 min-h-0 max-w-prose">
-        <p>
-
-
-
-  
-  
-  
-    <figure>
-      <img class="my-0 rounded-md" src="/img/clean-code/book.png" alt="이미지" />
-      
-    </figure>
-  
-
-</p>
-<p>노마드코더 클린코드 북클럽 스터디를 위해 도서 구입했습니다. :)</p>
-<p><a href="https://nomadcoders.co/c/clean-code/lobby">노마드코더 북클럽</a></p>
+      <div class="min-w-0 min-h-0">
+        <p>조영호 작가님의 오브젝트 책을 드디어 다 읽었다.</p>
+<p>재밌었다. 최근에 읽은 책 중에 리팩토링이랑 같이 제일 재밌게 본 것 같다.</p>
+<p>학교에서 객체지향을 배우긴 했지만 솔직히 잘 몰랐다. 코드를 짤 때 객체지향이나 그 개념들을 생각하면서 개발하지 않았었다. 리팩토링이나 클린코드와 같은 책들을 보면서 객체지향에 대한 개념이 스물스물 나오길래 이 참에 제대로 익혀보기로 했다. 그래서 조영호 작가님의 객체지향의 사실과 오해 → 오브젝트 둘 다 봤다.</p>
+<p>개인적으로 이 책을 보기 직전에 읽었던 클린코드에서 나오는 내용들의 다수가 객체지향의 개념들을 추상화해서 이해하기 쉽게 풀어쓴 것이라고 느껴졌다. 이해만 하고 그칠 게 아니라 지식을 활용하기 위해선 클린코드 책보다 객체지향적인 개념을 제대로 설명하는 이 책을 보는게 코드단에서 더 도움이 되는 것 같다.</p>
+<h3 id="리액트와-객체지향" class="relative group">리액트와 객체지향 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%a6%ac%ec%95%a1%ed%8a%b8%ec%99%80-%ea%b0%9d%ec%b2%b4%ec%a7%80%ed%96%a5" aria-label="Anchor">#</a></span></h3>
+<p>내가 프론트엔드 개발자라서 그런가 객체지향 서적을 읽어도 리액트 프로젝트 중심으로 생각을 하게 된다.</p>
+<p>우선 리액트의 컴포넌트로는 이 책에서 말하는 객체지향식의 협력은 구현하기 어렵다. 객체지향은 객체간의 협력을 통해 요구사항을 수행하는 패러다임인데 이 협력은 객체간에 메시지 전송을 통해 구현된다. 협력을 요청하는 객체에서 메시지를 보내면 수신하는 객체에서 그에 메시지에 맞는 메서드를 호출한다. 즉, 메서드 호출을 통해서 객체간에 협력을 하는 구조인데 리액트의 컴포넌트는 이게 쉽지 않다고 생각했다.</p>
+<p>리액트에서 컴포넌트간에 통신이라고 함은 부모 컴포넌트가 자식에게 내려주는 함수를 호출하는 것 밖에 떠오르지 않는다. props로 내려주는 함수가 그 객체가 노출한 퍼블릭 인터페이스의 메서드라고 생각해도 될 지 모르겠다. 우선 부모 자식관계여야만 props로 함수를 내려줄 수 있으므로 위치적인 제약이 있고, 그리고 부모는 자식에게 함수를 내려줄 수 있더라도 자식은 부모에게 자신의 메서드를 노출하지 못한다. 단방향으로만 메서드를 호출하여 상호작용할 수 있는 형태는 이 책에서 말하는 객체지향의 협력이랑은 거리가 있는 것 같다.</p>
+<p>그런데 협력의 관점에서가 아닌 SOLID나 추상화, 캡슐화에 대한 내용들은 리액트 컴포넌트 관점에서도 배울게 많았다.</p>
+<h3 id="다형성" class="relative group">다형성 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%eb%8b%a4%ed%98%95%ec%84%b1" aria-label="Anchor">#</a></span></h3>
+<p>객체지향에서 제일 중요한 개념은 다형성이었다. SOLID 원칙에서 OLD 세개가 다형성에 관한 내용이었고, 추상화와 캡슐화 개념도 포괄한다.</p>
+<p>서브타입들이 추상화된 슈퍼타입을 만들고 이 슈퍼타입에 의존하게 되면 (의존성 역전) 협력하는 객체는 해당 슈퍼타입을 상속하는 어떤 서브타입과도 협력할 수 있어진다(리스코프 치환). 그리고 기능의 추가, 수정시에는 기존 코드를 수정하는 대신 서브타입 객체를 추가함으로 (개방폐쇄) 코드 변경의 범위를 최소화할 수 있다.</p>
+<p>SOLID 원칙들은 리액트 컴포넌트에서도 적용해봄직하다고 생각한다. 요즘은 잘 안쓰는 것 같지만 프레젠테이션 - 컨테이너 패턴으로 컴포넌트 다형성도 구현할 수 있을 듯.</p>
+<h3 id="후기" class="relative group">후기 <span class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100"><a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700" style="text-decoration-line: none !important;" href="#%ed%9b%84%ea%b8%b0" aria-label="Anchor">#</a></span></h3>
+<p>솔직히 ‘난 리액트 쓰고 리액트는 함수형이니까 객체지향 몰라도 되는 것 아닌가?(함수형도 잘 모름)’ 하는 생각이 있었다. 이 책을 읽고 나서 느낀점은 객체지향 언어를 사용하지 않더라도 배울 점이 많다는 것이다.</p>
+<p>대부분 아키텍처나 개발 패러다임은 변경에 유연하게 대응하기 위해서 만들어졌다. 꼭 객체지향을 그대로 따르지 않더라도 의존성이나 변경의 영향을 줄이기 위해서 결합도을 낮추거나 하는 등의 개념들은 생각해볼 것이 많았다.</p>
+<p>유명한 책은 유명한 이유가 있다. 개인적으로 클린코드보다 실용적이고 훨씬 도움이 많이 됨. 추천! 별5개!</p>
+<p>요약 - <a href="https://github.com/soso01/study/tree/main/dev/%EC%98%A4%EB%B8%8C%EC%A0%9D%ED%8A%B8">https://github.com/soso01/study/tree/main/dev/오브젝트</a></p>
 
       </div>
     </section>
@@ -476,7 +473,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://www.facebook.com/sharer/sharer.php?u=https://soso01.dev/posts/2022/study/clean-code/start-clean-code-study/&amp;quote=00-%eb%85%b8%eb%a7%88%eb%93%9c%ec%bd%94%eb%8d%94%20%ed%81%b4%eb%a6%b0%ec%bd%94%eb%93%9c%20%ea%b5%ac%eb%a7%a4%20%ec%9d%b8%ec%a6%9d"
+          href="https://www.facebook.com/sharer/sharer.php?u=https://soso01.dev/posts/study/object/object-review/&amp;quote=%ec%b1%85%20%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%20%ed%9b%84%ea%b8%b0"
           title="Share on Facebook"
           aria-label="Share on Facebook"
           >
@@ -493,7 +490,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://twitter.com/intent/tweet/?url=https://soso01.dev/posts/2022/study/clean-code/start-clean-code-study/&amp;text=00-%eb%85%b8%eb%a7%88%eb%93%9c%ec%bd%94%eb%8d%94%20%ed%81%b4%eb%a6%b0%ec%bd%94%eb%93%9c%20%ea%b5%ac%eb%a7%a4%20%ec%9d%b8%ec%a6%9d"
+          href="https://twitter.com/intent/tweet/?url=https://soso01.dev/posts/study/object/object-review/&amp;text=%ec%b1%85%20%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%20%ed%9b%84%ea%b8%b0"
           title="Tweet on Twitter"
           aria-label="Tweet on Twitter"
           >
@@ -510,7 +507,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://pinterest.com/pin/create/bookmarklet/?url=https://soso01.dev/posts/2022/study/clean-code/start-clean-code-study/&amp;description=00-%eb%85%b8%eb%a7%88%eb%93%9c%ec%bd%94%eb%8d%94%20%ed%81%b4%eb%a6%b0%ec%bd%94%eb%93%9c%20%ea%b5%ac%eb%a7%a4%20%ec%9d%b8%ec%a6%9d"
+          href="https://pinterest.com/pin/create/bookmarklet/?url=https://soso01.dev/posts/study/object/object-review/&amp;description=%ec%b1%85%20%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%20%ed%9b%84%ea%b8%b0"
           title="Pin on Pinterest"
           aria-label="Pin on Pinterest"
           >
@@ -527,7 +524,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://reddit.com/submit/?url=https://soso01.dev/posts/2022/study/clean-code/start-clean-code-study/&amp;resubmit=true&amp;title=00-%eb%85%b8%eb%a7%88%eb%93%9c%ec%bd%94%eb%8d%94%20%ed%81%b4%eb%a6%b0%ec%bd%94%eb%93%9c%20%ea%b5%ac%eb%a7%a4%20%ec%9d%b8%ec%a6%9d"
+          href="https://reddit.com/submit/?url=https://soso01.dev/posts/study/object/object-review/&amp;resubmit=true&amp;title=%ec%b1%85%20%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%20%ed%9b%84%ea%b8%b0"
           title="Submit to Reddit"
           aria-label="Submit to Reddit"
           >
@@ -544,7 +541,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://soso01.dev/posts/2022/study/clean-code/start-clean-code-study/&amp;title=00-%eb%85%b8%eb%a7%88%eb%93%9c%ec%bd%94%eb%8d%94%20%ed%81%b4%eb%a6%b0%ec%bd%94%eb%93%9c%20%ea%b5%ac%eb%a7%a4%20%ec%9d%b8%ec%a6%9d"
+          href="https://www.linkedin.com/shareArticle?mini=true&amp;url=https://soso01.dev/posts/study/object/object-review/&amp;title=%ec%b1%85%20%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%20%ed%9b%84%ea%b8%b0"
           title="Share on LinkedIn"
           aria-label="Share on LinkedIn"
           >
@@ -561,7 +558,7 @@
       
         <a
           class="bg-neutral-300 text-neutral-700 dark:bg-neutral-700 dark:text-neutral-300 dark:hover:bg-primary-400 dark:hover:text-neutral-800 m-1 hover:bg-primary-500 hover:text-neutral rounded min-w-[2.4rem] inline-block text-center p-1"
-          href="mailto:?body=https://soso01.dev/posts/2022/study/clean-code/start-clean-code-study/&amp;subject=00-%eb%85%b8%eb%a7%88%eb%93%9c%ec%bd%94%eb%8d%94%20%ed%81%b4%eb%a6%b0%ec%bd%94%eb%93%9c%20%ea%b5%ac%eb%a7%a4%20%ec%9d%b8%ec%a6%9d"
+          href="mailto:?body=https://soso01.dev/posts/study/object/object-review/&amp;subject=%ec%b1%85%20%ec%98%a4%eb%b8%8c%ec%a0%9d%ed%8a%b8%20%ed%9b%84%ea%b8%b0"
           title="Send via email"
           aria-label="Send via email"
           >
@@ -588,7 +585,7 @@
       <div class="flex justify-between pt-3">
         <span>
           
-            <a class="flex group" href="/posts/hello/">
+            <a class="flex group" href="/posts/til/2022_08/">
               <span
                 class="mr-3 ltr:inline rtl:hidden text-neutral-700 dark:text-neutral group-hover:text-primary-600 dark:group-hover:text-primary-400"
                 >&larr;</span
@@ -600,11 +597,11 @@
               <span class="flex flex-col">
                 <span
                   class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
-                  >블로그 개설</span
+                  >This month I Learned - 22년 8월</span
                 >
                 <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
                   
-                    <time datetime="2022-04-15 00:00:00 &#43;0000 UTC">2022 / 04 / 15</time>
+                    <time datetime="2022-08-17 00:00:00 &#43;0000 UTC">2022 / 08 / 17</time>
                   
                 </span>
               </span>
@@ -623,6 +620,19 @@
     
   </article>
 
+      
+        <div
+          class="absolute top-[110vh] ltr:right-0 rtl:left-0 w-12 pointer-events-none bottom-[-5.5rem]"
+        >
+          <a
+            href="#the-top"
+            class="w-12 h-12 sticky pointer-events-auto top-[calc(100vh-5rem)] bg-neutral/50 dark:bg-neutral-800/50 backdrop-blur rounded-full text-xl flex items-center justify-center text-neutral-700 dark:text-neutral hover:text-primary-600 dark:hover:text-primary-400"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+          >
+            &uarr;
+          </a>
+        </div>
       
     </main>
     <div
