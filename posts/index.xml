@@ -6,7 +6,16 @@
     <description>Recent content in Posts on soso01 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Fri, 30 Sep 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://soso01.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://soso01.dev/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>프로그래머의 뇌 후기</title>
+      <link>https://soso01.dev/posts/study/etc/programmer-brain/</link>
+      <pubDate>Tue, 01 Nov 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://soso01.dev/posts/study/etc/programmer-brain/</guid>
+      <description>프로그래머의 뇌 후기</description>
+    </item>
+    
     <item>
       <title>This month I Learned - 22년 9월</title>
       <link>https://soso01.dev/posts/til/2022_09/</link>
