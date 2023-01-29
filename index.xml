@@ -6,7 +6,16 @@
     <description>Recent content in soso01&#39;s dev blog :tada: on soso01 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Tue, 01 Nov 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://soso01.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 29 Jan 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soso01.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>쏙쏙 들어오는 함수형 코딩 후기</title>
+      <link>https://soso01.dev/posts/study/etc/functional-programming-book-review/</link>
+      <pubDate>Sun, 29 Jan 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soso01.dev/posts/study/etc/functional-programming-book-review/</guid>
+      <description>쏙쏙 들어오는 함수형 코딩 후기</description>
+    </item>
+    
     <item>
       <title>프로그래머의 뇌 후기</title>
       <link>https://soso01.dev/posts/study/etc/programmer-brain/</link>
