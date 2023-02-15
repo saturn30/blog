@@ -6,7 +6,16 @@
     <description>Recent content in soso01&#39;s dev blog :tada: on soso01 blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ko</language>
-    <lastBuildDate>Mon, 13 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soso01.dev/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 15 Feb 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://soso01.dev/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>테스트하기 쉬운 리액트 페이지 만들기</title>
+      <link>https://soso01.dev/posts/dev/page-test/</link>
+      <pubDate>Wed, 15 Feb 2023 00:00:00 +0000</pubDate>
+      
+      <guid>https://soso01.dev/posts/dev/page-test/</guid>
+      <description>테스트하기 쉬운 리액트 페이지 만들기</description>
+    </item>
+    
     <item>
       <title>This month I Learned - 23년 2월</title>
       <link>https://soso01.dev/posts/til/2023_02/</link>
